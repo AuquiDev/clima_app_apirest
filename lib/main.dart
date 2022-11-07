@@ -12,9 +12,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'App Clima',
-      home: HomePages(),
+      home: Homaprueba(),//HomePages(),
       theme: ThemeData(
         textTheme: GoogleFonts.manropeTextTheme()
+      ),
+    );
+  }
+}
+
+
+class Homaprueba extends StatelessWidget {
+  const Homaprueba({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Container(child: IconButton(icon: Icon(Icons.abc),onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePages()));
+        },),),
       ),
     );
   }

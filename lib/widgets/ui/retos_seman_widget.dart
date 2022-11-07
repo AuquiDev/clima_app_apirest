@@ -40,7 +40,7 @@ class RetoSemanaWidget extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 30,
         ),
        
@@ -69,7 +69,7 @@ class weekWidget extends StatelessWidget {
             width: 100,
              child: Text(
               texto,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Colors.white,
                   fontSize: 16,
                   fontWeight: FontWeight.bold),
@@ -84,7 +84,7 @@ class weekWidget extends StatelessWidget {
                     fontSize: 16,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               Text(
